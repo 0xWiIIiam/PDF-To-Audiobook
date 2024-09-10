@@ -6,7 +6,6 @@ import PyPDF2
 
 # Function to upload PDF file
 def upload_pdf():
-    print("upload pdf function")
     global pdf_path
     pdf_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")]) 
     if pdf_path:
@@ -16,7 +15,6 @@ def upload_pdf():
 
 # Function to read the PDF file
 def read_pdf():
-    print("read pdf function")
     if not pdf_path:
         return
     
